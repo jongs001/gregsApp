@@ -6,6 +6,7 @@ import {
   } from "@aws-amplify/ui-react";
 import { API, Storage } from 'aws-amplify';
 import { createDocument as createDriverDocumentMutation} from './graphql/mutations';
+import {Link} from 'react-router-dom'
 
 
 const initialFormState = { name: '', description: '' }
@@ -73,7 +74,7 @@ function Drivers({ signOut }){
             </div>
 
 
-            <Button class="btn btn-primary mr-1" onClick={signOut}>Sign Out</Button>
+            <Link to="/"><Button class="btn btn-primary mr-1" onClick={signOut}>Sign Out</Button></Link>
 
           </main>
         </div>

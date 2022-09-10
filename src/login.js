@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom'
 import Header from './header'
 
-function Login(signOut){
+function Login(){
     return (
         <div class="cover-container d-flex h-100  mx-auto flex-column bg-light" >
             <Header />
