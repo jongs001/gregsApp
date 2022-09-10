@@ -1,23 +1,28 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Amplify from 'aws-amplify';
+import Home from "./home";
+import Drivers from "./drivers";
+import Login from "./login";
+import About from "./about"
+import Customer from './customer';
+import config from './aws-exports';
+import "@aws-amplify/ui-react/styles.css";
+import { Routes, Route } from "react-router-dom";
+
+
+Amplify.configure(config);
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <Routes><Route path="/" element={<Home />} /></Routes>
+      <Routes><Route path="/drivers" element={<Drivers />} /></Routes>
+      <Routes><Route path="/login" element={<Login />} /></Routes>
+      <Routes><Route path="/about" element={<About />} /></Routes>
+      <Routes><Route path="/customer" element={<Customer />} /></Routes>
     </div>
   );
 }

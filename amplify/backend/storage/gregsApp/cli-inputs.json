@@ -1,0 +1,12 @@
+{
+  "resourceName": "gregsApp",
+  "policyUUID": "5e02e44f",
+  "bucketName": "gregsapp676bb36d16a64d9a993b53ef6ba7d6c8",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}
