@@ -13,7 +13,7 @@ function Home(){
                 <p class="lead">
                 </p>
                 <p class="lead">
-                <Link class="btn btn-lg btn-secondary" to="/login"> Profile </Link>
+                <Link class="btn btn-lg btn-secondary" to="/login"> Sign in </Link>
                 </p>
             </main>
 
